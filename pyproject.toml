@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "sigtyp"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+transformers = "^4.35.2"
+datasets = "^2.15.0"
+torch = "^2.1.1"
+evaluate = "^0.4.1"
+conllu = "^4.5.3"
+accelerate = "^0.25.0"
+seqeval = "^1.2.2"
+sentencepiece = "^0.1.99"
+protobuf = "^4.25.1"
+nltk = "^3.8.1"
+wandb = "^0.16.1"
+gensim = "^4.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
