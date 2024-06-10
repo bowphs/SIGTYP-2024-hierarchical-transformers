@@ -80,7 +80,8 @@ class NNModule(nn.Module):
     # Load config
     if model_config:
       config = ModelConfig.from_json_file(model_config)
-      config.token_format = args.token_format
+      if args:
+        config.token_format = args.token_format
       if getattr(args, 'max_word_length', None) is not None:
         config.max_word_length = args.max_word_length
     else:
